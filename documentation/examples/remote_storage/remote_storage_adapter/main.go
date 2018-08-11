@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2017 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -29,16 +35,15 @@ import (
 	"github.com/go-kit/kit/log/level"
 	"github.com/gogo/protobuf/proto"
 	"github.com/golang/snappy"
+	influx "github.com/influxdata/influxdb/client/v2"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
-
-	influx "github.com/influxdata/influxdb/client/v2"
-
 	"github.com/prometheus/common/promlog"
-	"github.com/prometheus/prometheus/documentation/examples/remote_storage/remote_storage_adapter/graphite"
-	"github.com/prometheus/prometheus/documentation/examples/remote_storage/remote_storage_adapter/influxdb"
-	"github.com/prometheus/prometheus/documentation/examples/remote_storage/remote_storage_adapter/opentsdb"
-	"github.com/prometheus/prometheus/prompb"
+
+	"github.com/sniperkit/snk.fork.prometheus/documentation/examples/remote_storage/remote_storage_adapter/graphite"
+	"github.com/sniperkit/snk.fork.prometheus/documentation/examples/remote_storage/remote_storage_adapter/influxdb"
+	"github.com/sniperkit/snk.fork.prometheus/documentation/examples/remote_storage/remote_storage_adapter/opentsdb"
+	"github.com/sniperkit/snk.fork.prometheus/prompb"
 )
 
 type config struct {

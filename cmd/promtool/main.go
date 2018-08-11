@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2015 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -25,18 +31,18 @@ import (
 	"strings"
 	"time"
 
-	"gopkg.in/alecthomas/kingpin.v2"
-	"gopkg.in/yaml.v2"
-
 	"github.com/prometheus/client_golang/api"
 	"github.com/prometheus/client_golang/api/prometheus/v1"
 	config_util "github.com/prometheus/common/config"
 	"github.com/prometheus/common/model"
 	"github.com/prometheus/common/version"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/rulefmt"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/util/promlint"
+	"gopkg.in/alecthomas/kingpin.v2"
+	"gopkg.in/yaml.v2"
+
+	"github.com/sniperkit/snk.fork.prometheus/config"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/rulefmt"
+	"github.com/sniperkit/snk.fork.prometheus/promql"
+	"github.com/sniperkit/snk.fork.prometheus/util/promlint"
 )
 
 func main() {

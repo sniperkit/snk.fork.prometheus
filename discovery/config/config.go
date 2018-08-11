@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2016 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -14,18 +20,18 @@
 package config
 
 import (
-	"github.com/prometheus/prometheus/discovery/azure"
-	"github.com/prometheus/prometheus/discovery/consul"
-	"github.com/prometheus/prometheus/discovery/dns"
-	"github.com/prometheus/prometheus/discovery/ec2"
-	"github.com/prometheus/prometheus/discovery/file"
-	"github.com/prometheus/prometheus/discovery/gce"
-	"github.com/prometheus/prometheus/discovery/kubernetes"
-	"github.com/prometheus/prometheus/discovery/marathon"
-	"github.com/prometheus/prometheus/discovery/openstack"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/discovery/triton"
-	"github.com/prometheus/prometheus/discovery/zookeeper"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/azure"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/consul"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/dns"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/ec2"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/file"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/gce"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/kubernetes"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/marathon"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/openstack"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/targetgroup"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/triton"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/zookeeper"
 )
 
 // ServiceDiscoveryConfig configures lists of different service discovery mechanisms.

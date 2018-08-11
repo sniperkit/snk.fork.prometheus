@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2016 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -19,7 +25,6 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/go-kit/kit/log"
 	"io/ioutil"
 	"math"
 	"net/http"
@@ -30,6 +35,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/go-kit/kit/log"
 	"github.com/gogo/protobuf/proto"
 	"github.com/golang/snappy"
 	config_util "github.com/prometheus/common/config"
@@ -37,16 +43,16 @@ import (
 	"github.com/prometheus/common/promlog"
 	"github.com/prometheus/common/route"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/rules"
-	"github.com/prometheus/prometheus/scrape"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/storage/remote"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/sniperkit/snk.fork.prometheus/config"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/labels"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/timestamp"
+	"github.com/sniperkit/snk.fork.prometheus/prompb"
+	"github.com/sniperkit/snk.fork.prometheus/promql"
+	"github.com/sniperkit/snk.fork.prometheus/rules"
+	"github.com/sniperkit/snk.fork.prometheus/scrape"
+	"github.com/sniperkit/snk.fork.prometheus/storage"
+	"github.com/sniperkit/snk.fork.prometheus/storage/remote"
+	"github.com/sniperkit/snk.fork.prometheus/util/testutil"
 )
 
 type testTargetRetriever struct{}

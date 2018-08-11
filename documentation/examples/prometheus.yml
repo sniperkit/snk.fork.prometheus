@@ -1,3 +1,7 @@
+# Sniperkit-Bot
+# - Date: 2018-08-11 23:49:10.5425416 +0200 CEST m=+0.207409358
+# - Status: analyzed
+
 # my global config
 global:
   scrape_interval:     15s # Set the scrape interval to every 15 seconds. Default is every 1 minute.

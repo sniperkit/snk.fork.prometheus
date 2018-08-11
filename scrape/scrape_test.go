@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2016 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -29,19 +35,18 @@ import (
 	"testing"
 	"time"
 
+	dto "github.com/prometheus/client_model/go"
 	"github.com/prometheus/common/model"
 	"github.com/stretchr/testify/require"
 
-	dto "github.com/prometheus/client_model/go"
-
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/textparse"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/pkg/value"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/sniperkit/snk.fork.prometheus/config"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/targetgroup"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/labels"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/textparse"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/timestamp"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/value"
+	"github.com/sniperkit/snk.fork.prometheus/storage"
+	"github.com/sniperkit/snk.fork.prometheus/util/testutil"
 )
 
 func TestNewScrapePool(t *testing.T) {

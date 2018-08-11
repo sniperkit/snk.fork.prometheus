@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2015 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -26,9 +32,9 @@ import (
 	"github.com/prometheus/common/model"
 	"github.com/samuel/go-zookeeper/zk"
 
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/util/strutil"
-	"github.com/prometheus/prometheus/util/treecache"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/targetgroup"
+	"github.com/sniperkit/snk.fork.prometheus/util/strutil"
+	"github.com/sniperkit/snk.fork.prometheus/util/treecache"
 )
 
 var (

@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2015 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -18,13 +24,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	"github.com/prometheus/prometheus/util/testutil"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/labels"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/timestamp"
+	"github.com/sniperkit/snk.fork.prometheus/util/testutil"
 )
 
 func TestDeriv(t *testing.T) {
-	// https://github.com/prometheus/prometheus/issues/2674#issuecomment-315439393
+	// https://github.com/sniperkit/snk.fork.prometheus/issues/2674#issuecomment-315439393
 	// This requires more precision than the usual test system offers,
 	// so we test it by hand.
 	storage := testutil.NewStorage(t)

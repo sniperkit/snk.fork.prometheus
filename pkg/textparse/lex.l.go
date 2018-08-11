@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // CAUTION: Generated file - DO NOT EDIT.
 
 // Copyright 2017 The Prometheus Authors

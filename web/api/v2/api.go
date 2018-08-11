@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2017 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -24,24 +30,22 @@ import (
 	"path/filepath"
 	"time"
 
-	old_ctx "golang.org/x/net/context"
-
-	"google.golang.org/grpc"
-	"google.golang.org/grpc/codes"
-	"google.golang.org/grpc/status"
-
 	"github.com/cockroachdb/cockroach/pkg/util/protoutil"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/pkg/errors"
 	"github.com/prometheus/tsdb"
 	tsdbLabels "github.com/prometheus/tsdb/labels"
+	old_ctx "golang.org/x/net/context"
+	"google.golang.org/grpc"
+	"google.golang.org/grpc/codes"
+	"google.golang.org/grpc/status"
 
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/pkg/timestamp"
-	pb "github.com/prometheus/prometheus/prompb"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/scrape"
-	"github.com/prometheus/prometheus/storage"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/labels"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/timestamp"
+	pb "github.com/sniperkit/snk.fork.prometheus/prompb"
+	"github.com/sniperkit/snk.fork.prometheus/promql"
+	"github.com/sniperkit/snk.fork.prometheus/scrape"
+	"github.com/sniperkit/snk.fork.prometheus/storage"
 )
 
 // API encapsulates all API services.

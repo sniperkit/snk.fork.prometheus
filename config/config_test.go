@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2015 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -23,22 +29,22 @@ import (
 	"testing"
 	"time"
 
-	"github.com/prometheus/prometheus/discovery/azure"
-	"github.com/prometheus/prometheus/discovery/consul"
-	"github.com/prometheus/prometheus/discovery/dns"
-	"github.com/prometheus/prometheus/discovery/ec2"
-	"github.com/prometheus/prometheus/discovery/file"
-	"github.com/prometheus/prometheus/discovery/kubernetes"
-	"github.com/prometheus/prometheus/discovery/marathon"
-	"github.com/prometheus/prometheus/discovery/targetgroup"
-	"github.com/prometheus/prometheus/discovery/triton"
-	"github.com/prometheus/prometheus/discovery/zookeeper"
-
 	config_util "github.com/prometheus/common/config"
 	"github.com/prometheus/common/model"
-	sd_config "github.com/prometheus/prometheus/discovery/config"
-	"github.com/prometheus/prometheus/util/testutil"
 	"gopkg.in/yaml.v2"
+
+	"github.com/sniperkit/snk.fork.prometheus/discovery/azure"
+	sd_config "github.com/sniperkit/snk.fork.prometheus/discovery/config"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/consul"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/dns"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/ec2"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/file"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/kubernetes"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/marathon"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/targetgroup"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/triton"
+	"github.com/sniperkit/snk.fork.prometheus/discovery/zookeeper"
+	"github.com/sniperkit/snk.fork.prometheus/util/testutil"
 )
 
 func mustParseURL(u string) *config_util.URL {

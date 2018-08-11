@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2016 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -25,11 +31,11 @@ import (
 
 	"github.com/gogo/protobuf/proto"
 	"github.com/golang/snappy"
+	config_util "github.com/prometheus/common/config"
 	"github.com/prometheus/common/model"
 	"golang.org/x/net/context/ctxhttp"
 
-	config_util "github.com/prometheus/common/config"
-	"github.com/prometheus/prometheus/prompb"
+	"github.com/sniperkit/snk.fork.prometheus/prompb"
 )
 
 const maxErrMsgLen = 256

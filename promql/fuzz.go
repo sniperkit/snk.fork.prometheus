@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2015 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -16,7 +22,9 @@
 
 package promql
 
-import "github.com/prometheus/prometheus/pkg/textparse"
+import (
+	"github.com/sniperkit/snk.fork.prometheus/pkg/textparse"
+)
 
 // PromQL parser fuzzing instrumentation for use with
 // https://github.com/dvyukov/go-fuzz.
@@ -24,7 +32,7 @@ import "github.com/prometheus/prometheus/pkg/textparse"
 // Fuzz each parser by building appropriately instrumented parser, ex.
 // FuzzParseMetric and execute it with it's
 //
-//     go-fuzz-build -func FuzzParseMetric -o FuzzParseMetric.zip github.com/prometheus/prometheus/promql
+//     go-fuzz-build -func FuzzParseMetric -o FuzzParseMetric.zip github.com/sniperkit/snk.fork.prometheus/promql
 //
 // And then run the tests with the appropriate inputs
 //

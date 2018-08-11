@@ -1,4 +1,10 @@
 /*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
+/*
  * jQuery Hotkeys Plugin
  * Copyright 2010, John Resig
  * Dual licensed under the MIT or GPL Version 2 licenses.

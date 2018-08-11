@@ -1,5 +1,9 @@
+# Sniperkit-Bot
+# - Date: 2018-08-11 23:49:10.5425416 +0200 CEST m=+0.207409358
+# - Status: analyzed
+
 repository:
-    path: github.com/prometheus/prometheus
+    path: github.com/sniperkit/snk.fork.prometheus
 build:
     binaries:
         - name: prometheus

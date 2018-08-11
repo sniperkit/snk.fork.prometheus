@@ -1,3 +1,7 @@
+# Sniperkit-Bot
+# - Date: 2018-08-11 23:49:10.5425416 +0200 CEST m=+0.207409358
+# - Status: analyzed
+
 scrape_configs:
 - kubernetes_sd_configs:
   - api_server: kubernetes:443

@@ -1,4 +1,10 @@
 /*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
+/*
  * Functions to make it easier to write prometheus consoles, such
  * as graphs.
  *

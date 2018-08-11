@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2013 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -34,11 +40,8 @@ import (
 	"strings"
 	"sync"
 	"sync/atomic"
-	"time"
-
-	"google.golang.org/grpc"
-
 	template_text "text/template"
+	"time"
 
 	"github.com/cockroachdb/cmux"
 	"github.com/go-kit/kit/log"
@@ -53,19 +56,20 @@ import (
 	"github.com/prometheus/common/route"
 	"github.com/prometheus/tsdb"
 	"golang.org/x/net/netutil"
+	"google.golang.org/grpc"
 
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/notifier"
-	"github.com/prometheus/prometheus/pkg/labels"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/rules"
-	"github.com/prometheus/prometheus/scrape"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/template"
-	"github.com/prometheus/prometheus/util/httputil"
-	api_v1 "github.com/prometheus/prometheus/web/api/v1"
-	api_v2 "github.com/prometheus/prometheus/web/api/v2"
-	"github.com/prometheus/prometheus/web/ui"
+	"github.com/sniperkit/snk.fork.prometheus/config"
+	"github.com/sniperkit/snk.fork.prometheus/notifier"
+	"github.com/sniperkit/snk.fork.prometheus/pkg/labels"
+	"github.com/sniperkit/snk.fork.prometheus/promql"
+	"github.com/sniperkit/snk.fork.prometheus/rules"
+	"github.com/sniperkit/snk.fork.prometheus/scrape"
+	"github.com/sniperkit/snk.fork.prometheus/storage"
+	"github.com/sniperkit/snk.fork.prometheus/template"
+	"github.com/sniperkit/snk.fork.prometheus/util/httputil"
+	api_v1 "github.com/sniperkit/snk.fork.prometheus/web/api/v1"
+	api_v2 "github.com/sniperkit/snk.fork.prometheus/web/api/v2"
+	"github.com/sniperkit/snk.fork.prometheus/web/ui"
 )
 
 var localhostRepresentations = []string{"127.0.0.1", "localhost"}

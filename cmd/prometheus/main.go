@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2015 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -34,29 +40,29 @@ import (
 
 	"github.com/go-kit/kit/log"
 	"github.com/go-kit/kit/log/level"
+	"github.com/mwitkow/go-conntrack"
 	"github.com/oklog/oklog/pkg/group"
 	"github.com/pkg/errors"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/common/model"
+	"github.com/prometheus/common/promlog"
+	promlogflag "github.com/prometheus/common/promlog/flag"
 	"github.com/prometheus/common/version"
 	"gopkg.in/alecthomas/kingpin.v2"
 	k8s_runtime "k8s.io/apimachinery/pkg/util/runtime"
 
-	"github.com/mwitkow/go-conntrack"
-	"github.com/prometheus/common/promlog"
-	promlogflag "github.com/prometheus/common/promlog/flag"
-	"github.com/prometheus/prometheus/config"
-	"github.com/prometheus/prometheus/discovery"
-	sd_config "github.com/prometheus/prometheus/discovery/config"
-	"github.com/prometheus/prometheus/notifier"
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/rules"
-	"github.com/prometheus/prometheus/scrape"
-	"github.com/prometheus/prometheus/storage"
-	"github.com/prometheus/prometheus/storage/remote"
-	"github.com/prometheus/prometheus/storage/tsdb"
-	"github.com/prometheus/prometheus/util/strutil"
-	"github.com/prometheus/prometheus/web"
+	"github.com/sniperkit/snk.fork.prometheus/config"
+	"github.com/sniperkit/snk.fork.prometheus/discovery"
+	sd_config "github.com/sniperkit/snk.fork.prometheus/discovery/config"
+	"github.com/sniperkit/snk.fork.prometheus/notifier"
+	"github.com/sniperkit/snk.fork.prometheus/promql"
+	"github.com/sniperkit/snk.fork.prometheus/rules"
+	"github.com/sniperkit/snk.fork.prometheus/scrape"
+	"github.com/sniperkit/snk.fork.prometheus/storage"
+	"github.com/sniperkit/snk.fork.prometheus/storage/remote"
+	"github.com/sniperkit/snk.fork.prometheus/storage/tsdb"
+	"github.com/sniperkit/snk.fork.prometheus/util/strutil"
+	"github.com/sniperkit/snk.fork.prometheus/web"
 )
 
 var (

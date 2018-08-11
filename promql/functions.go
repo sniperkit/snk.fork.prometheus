@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2015 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -23,7 +29,8 @@ import (
 	"time"
 
 	"github.com/prometheus/common/model"
-	"github.com/prometheus/prometheus/pkg/labels"
+
+	"github.com/sniperkit/snk.fork.prometheus/pkg/labels"
 )
 
 // Function represents a function of the expression language and is
@@ -590,7 +597,7 @@ func funcDeriv(vals []Value, args Expressions, enh *EvalNodeHelper) Vector {
 
 		// We pass in an arbitrary timestamp that is near the values in use
 		// to avoid floating point accuracy issues, see
-		// https://github.com/prometheus/prometheus/issues/2674
+		// https://github.com/sniperkit/snk.fork.prometheus/issues/2674
 		slope, _ := linearRegression(samples.Points, samples.Points[0].T)
 		enh.out = append(enh.out, Sample{
 			Point: Point{V: slope},

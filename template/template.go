@@ -1,3 +1,9 @@
+/*
+Sniperkit-Bot
+- Date: 2018-08-11 23:49:10.542900072 +0200 CEST m=+0.207767820
+- Status: analyzed
+*/
+
 // Copyright 2013 The Prometheus Authors
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -18,20 +24,19 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	html_template "html/template"
 	"math"
 	"net/url"
 	"regexp"
 	"sort"
 	"strings"
-	"time"
-
-	html_template "html/template"
 	text_template "text/template"
+	"time"
 
 	"github.com/prometheus/common/model"
 
-	"github.com/prometheus/prometheus/promql"
-	"github.com/prometheus/prometheus/util/strutil"
+	"github.com/sniperkit/snk.fork.prometheus/promql"
+	"github.com/sniperkit/snk.fork.prometheus/util/strutil"
 )
 
 // A version of vector that's easier to use from templates.
